@@ -2,6 +2,7 @@ void main() {
   String greet = greeting();
   String arr = arrow();
   int age = getAge();
+
   print(greet); // hello
   print(age); // 30
   print(arr); // This is Arrow function
