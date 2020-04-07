@@ -5,9 +5,18 @@ void main() => runApp(MaterialApp(
         appBar: AppBar(
           title: Text('FLutorial_App'),
           centerTitle: true,
+          backgroundColor: Colors.red[900],
         ),
         body: Center(
-          child: Text('Hello Words!'),
+          child: Text(
+            'Welcome to Flutorial',
+            style: TextStyle(
+              fontSize: 25.0,
+              fontWeight: FontWeight.bold,
+              color: Colors.grey[600],
+              fontFamily: 'LinetoCircular',
+            ),
+          ),
         ),
         bottomNavigationBar: BottomAppBar(
           shape: const CircularNotchedRectangle(),
@@ -19,6 +28,7 @@ void main() => runApp(MaterialApp(
           onPressed: () {},
           tooltip: 'Increment Counter',
           child: Icon(Icons.add),
+          backgroundColor: Colors.red[700],
         ),
         floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
       ),

@@ -1,4 +1,4 @@
-# Hello, Flutter! (11.00)
+# Hello, Flutter!
 
 What's flutter?
 
