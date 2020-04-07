@@ -1,4 +1,4 @@
-package com.example.helloword
+package com.example.flutorial_app
 
 import androidx.annotation.NonNull;
 import io.flutter.embedding.android.FlutterActivity
