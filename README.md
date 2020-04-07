@@ -7,7 +7,7 @@ What's flutter?
 
 ## Basic understanding of programming principles
 
-- Clases
+- Classes
 - Function & methods
 - Variable
 - Asynchronous code
