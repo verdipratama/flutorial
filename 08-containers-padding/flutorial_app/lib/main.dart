@@ -39,7 +39,9 @@ class Home extends StatelessWidget {
         color: Colors.red,
       ),
       floatingActionButton: FloatingActionButton(
-        onPressed: () {},
+        onPressed: () {
+          print('You clicked me!!!');
+        },
         tooltip: 'Increment Counter',
         child: Icon(Icons.add),
         backgroundColor: Colors.red[700],
