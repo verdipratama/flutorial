@@ -14,24 +14,35 @@ class Home extends StatelessWidget {
         centerTitle: true,
         backgroundColor: Colors.red[900],
       ),
-      body: Row(
+      body: Column(
         // Main axis kesamping
         // Cross axis kebawah
         // Widget sama dengan list
-        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-        crossAxisAlignment: CrossAxisAlignment.start,
+        // ROW DARI KIRI KE KANAN
+        // KOLOM DARI ATAS KE BAWAH
+        mainAxisAlignment: MainAxisAlignment.end,
+        crossAxisAlignment: CrossAxisAlignment.end,
         children: <Widget>[
-          Text('Haloha'),
-          FlatButton(
-            onPressed: () {
-              print('Click me');
-            },
-            color: Colors.amber,
-            child: Text('Click Me'),
+          Row(
+            children: <Widget>[
+              Text('Hello'),
+              Text('World'),
+            ],
           ),
           Container(
-            color: Colors.brown[900],
-            child: Text('Inside Container'),
+            padding: EdgeInsets.all(20.0),
+            color: Colors.cyan,
+            child: Text('one'),
+          ),
+          Container(
+            padding: EdgeInsets.all(30.0),
+            color: Colors.red,
+            child: Text('one'),
+          ),
+          Container(
+            padding: EdgeInsets.all(40.0),
+            color: Colors.brown,
+            child: Text('one'),
           ),
         ],
       ),

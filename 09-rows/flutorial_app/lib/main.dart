@@ -18,6 +18,7 @@ class Home extends StatelessWidget {
         // Main axis kesamping
         // Cross axis kebawah
         // Widget sama dengan list
+        // ROW DARI KIRI KE KANAN
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
