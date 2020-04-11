@@ -5,8 +5,6 @@ void main() => runApp(MaterialApp(
     debugShowCheckedModeBanner: false,
     home: Home()));
 
-// stateless widgets
-// State widget cannot change over time
 class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -16,21 +14,26 @@ class Home extends StatelessWidget {
         centerTitle: true,
         backgroundColor: Colors.red[900],
       ),
-      body: Container(
-        color: Colors.brown[900],
-        child: Container(
-          child: Center(
-            child: Text(
-              'Welcome to Flutorial',
-              style: TextStyle(
-                fontSize: 25.0,
-                fontWeight: FontWeight.bold,
-                color: Colors.white,
-                fontFamily: 'LinetoCircular',
-              ),
-            ),
+      body: Row(
+        // Main axis kesamping
+        // Cross axis kebawah
+        // Widget sama dengan list
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: <Widget>[
+          Text('Haloha'),
+          FlatButton(
+            onPressed: () {
+              print('Click me');
+            },
+            color: Colors.amber,
+            child: Text('Click Me'),
           ),
-        ),
+          Container(
+            color: Colors.brown[900],
+            child: Text('Inside Container'),
+          ),
+        ],
       ),
       bottomNavigationBar: BottomAppBar(
         shape: const CircularNotchedRectangle(),
