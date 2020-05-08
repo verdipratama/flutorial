@@ -1,4 +1,4 @@
-# Hello, Flutter! (DITUNDA!)
+# Hello, Flutter!
 
 What's flutter?
 
